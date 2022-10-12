@@ -4,7 +4,7 @@ import {StyleSheet, Text, View, TouchableOpacity} from 'react-native';
 const Settingsscreen = ({navigation}) => {
   return (
     <View style={styles.screen}>
-      <Text style={styles.text}> I am screen3 </Text>
+      <Text style={styles.text}> Screen3 </Text>
       <TouchableOpacity
         onPress={() =>
           navigation.navigate('Nestedscreen3', {msg: 'from thirdscreen'})
@@ -26,12 +26,14 @@ const styles = StyleSheet.create({
   },
   text: {
     color: '#000',
-    fontWeight: '700',
+    fontWeight: 'bold',
     fontSize: 30,
   },
   button: {
-    backgroundColor: '#0275d8',
-    paddingVertical: 5,
+    backgroundColor: '#d6644d',
+    marginTop: 10,
+    borderRadius: 10,
+    paddingVertical: 10,
     paddingHorizontal: 10,
   },
   buttonText: {
